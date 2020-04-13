@@ -1,6 +1,8 @@
 // Assignment Code
 let generateBtn = document.querySelector("#generate");
-
+// Write password to the #password input
+function writePassword() {
+//onClick run prompt to obtain user selected password length
 let amountCharacters = prompt("Between 8 and 52 characters, how long would you like your Password?")
 
 let numArray = ['0','1','2','3','4','5','6','7','8','9'];
@@ -61,15 +63,19 @@ function getRandomChar() {
   }
 
 //Will randomize the one Random Character we get from above loop within loop
+
+
+
 for (let k = 0; k < amountCharacters; k++) {
   let randPassword = getRandomChar();
-  console.log(randPassword);
+  donePassword = randPassword.join;
+  console.log(donepassword)
 };
 
 
-// Write password to the #password input
-function writePassword() {
-  let password = generatePassword();
+//Next Step:  I need to be able to take the full randPassword".join"(single line of characters) and apply to below variable "password"
+  
+  let password = donePassword;
   let passwordText = document.querySelector("#password");
 
   passwordText.value = password;
