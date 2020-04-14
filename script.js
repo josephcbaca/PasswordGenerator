@@ -63,19 +63,21 @@ function getRandomChar() {
   }
 
 //Will randomize the one Random Character we get from above loop within loop
+let completePassword = []
 
 
 
 for (let k = 0; k < amountCharacters; k++) {
-  let randPassword = getRandomChar();
-  donePassword = randPassword.join;
-  console.log(donepassword)
-};
+  let fullPassword = getRandomChar();
+  completePassword.push(fullPassword)
 
+
+
+}
 
 //Next Step:  I need to be able to take the full randPassword".join"(single line of characters) and apply to below variable "password"
   
-  let password = donePassword;
+  let password = completePassword.join("");
   let passwordText = document.querySelector("#password");
 
   passwordText.value = password;
